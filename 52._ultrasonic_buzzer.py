@@ -26,7 +26,7 @@ def loop() :
     time.sleep_ms(100)
     
     if distance < 10 :
-        for i in range(80):
+        for i in range(80) :
             buzzer.value(HIGH)
             time.sleep(0.001)
             buzzer.value(LOW)
