@@ -3,14 +3,14 @@ import ETboard.lib.WiFi as WiFi
 from machine import Pin
 import time
 
-ssid = "ketri"
-password = "ketri2484"
+ssid = "ssid"
+password = "password"
 server = WiFi.WebServer(80)
 led = Pin(D2)
 
 def handle_root() :
     led.value(HIGH)
-    server.send(200, "text/plain", "hello jeong-inn __{}".format(time.time()))
+    server.send(200, "text/plain", "hello jeong-inn! __ {}".format(time.time()))
     led.value(LOW)
 
 def setup() :
