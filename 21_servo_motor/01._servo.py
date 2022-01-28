@@ -7,6 +7,7 @@ servo = Servo(Pin(D2))
 
 def setup() :
     pass
+
 def loop() :
     pos = 0
     
@@ -15,7 +16,7 @@ def loop() :
         pos += 1
         time.sleep(0.01)
     
-    for x in range (0) :
+    for x in range (180) :
         servo.write_angle(pos)
         pos -= 1
         time.sleep(0.01)
