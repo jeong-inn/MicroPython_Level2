@@ -3,4 +3,5 @@
 **ET-Board**
 
 >MicroPython 
->http://et.ketri.re.kr/learning/microPython.html
+
+http://et.ketri.re.kr/learning/microPython.html
