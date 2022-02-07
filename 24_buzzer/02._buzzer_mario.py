@@ -1,5 +1,5 @@
 from ETboard.lib.pin_define import *
-from ETboard.lib.pitches import
+from ETboard.lib.pitches import *
 import time
 
 buzzer = Pin(D6)
@@ -14,14 +14,14 @@ def setup() :
 
 def loop() :
       if (millis() - beepTime >= 2000/noteDurations[melody_num]) :
-            beepTime = millis();
-            ledcWrite(0,0); 
-            ledcWriteTone(0,melody_note[melody_num]);  
-            melody_num++;
+            beepTime = millis()
+            ledcWrite(0,0)
+            ledcWriteTone(0,melody_note[melody_num])  
+            melody_num++
             if (melody_num == 50) :
-                ledcWrite(0,0); 
-                melody_num = 0; 
-                beepTime = 0;
+                ledcWrite(0,0)
+                melody_num = 0
+                beepTime = 0
     
   
 if __name__ == "__main__" :
